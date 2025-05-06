@@ -7,29 +7,32 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-ngo-blue to-ngo-blue-dark text-white">
+      <section className="bg-gradient-to-r from-[var(--light-blue)] to-[var(--light-blue-dark)] text-white">
         <div className="container mx-auto px-4 py-20 md:py-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="animate-fade-in-up">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                Making a Difference <br /> Together
+              Caring for a Better <br /> Tomorrow
               </h1>
               <p className="text-lg md:text-xl mb-8 text-gray-100">
-                Join us in our mission to create positive change through humanitarian efforts, education, and community development.
+              Join us in our mission to enhance the lives of aging adults through compassionate care, community support, and empowering families for a healthier, active aging experience.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/donate" className="btn-secondary">
-                  Donate Now
-                </Link>
-                <Link to="/volunteer" className="bg-white text-ngo-blue hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition-colors duration-300">
+              <Link to="/donate" 
+                className="text-light-blue border-2 border-white px-6 py-3 rounded-md font-medium transition-colors duration-300 hover:bg-light-blue hover:text-white">
+                Donate Now
+              </Link>
+
+
+                <Link to="/volunteer" className="bg-white text-[var(--light-blue-dark)] hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition-colors duration-300">
                   Volunteer
                 </Link>
               </div>
             </div>
             <div className="hidden md:block animate-fade-in">
               <img 
-                src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                alt="Helping hands volunteers" 
+                src="/main-image.jpg" 
+                alt="Helping the elderly" 
                 className="rounded-lg shadow-xl max-w-md mx-auto"
               />
             </div>
@@ -38,7 +41,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Impact Stats */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Impact</h2>
@@ -81,7 +84,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Projects */}
       <section className="py-16">
@@ -155,14 +158,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-ngo-orange text-white">
+      <section className="py-16 bg-[var(--green-dark)] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Make a Difference?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Whether you contribute your time as a volunteer or support our cause with a donation, your help matters.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/donate" className="bg-white text-ngo-orange hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors duration-300">
+            <Link to="/donate" className="bg-white text-[var(--green-dark)] hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors duration-300">
               Donate Now
             </Link>
             <Link to="/volunteer" className="border-2 border-white hover:bg-white hover:text-ngo-orange px-8 py-3 rounded-md font-medium transition-colors duration-300">

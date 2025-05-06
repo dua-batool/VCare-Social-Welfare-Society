@@ -26,7 +26,8 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-ngo-blue">Helping Hands</span>
+              <img src="/logo.jpg" alt="Vcare Logo" className="h-10 mr-3" />
+              <span className="text-2xl font-bold text-[var(--light-blue-dark)]">Vcare Social Welfare Society</span>
             </Link>
           </div>
           
@@ -39,8 +40,8 @@ const Navbar: React.FC = () => {
                   to={link.path}
                   className={`${
                     isActive(link.path)
-                      ? 'text-ngo-blue font-semibold border-b-2 border-ngo-blue'
-                      : 'text-gray-600 hover:text-ngo-blue'
+                      ? 'text-[var(--light-blue)] font-semibold border-b-2 border-[var(--light-blue)]'
+                      : 'text-gray-600 hover:text-[var(--light-blue)]'
                   } px-3 py-2 text-sm font-medium transition-colors duration-300`}
                 >
                   {link.name}

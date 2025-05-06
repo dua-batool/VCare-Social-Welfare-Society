@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Youtube, Instagram, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -10,23 +10,23 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Helping Hands</h3>
+            <h3 className="text-xl font-bold mb-4">VCare Social Welfare Society</h3>
             <p className="text-gray-300 mb-4">
-              A non-profit organization dedicated to making a positive impact in communities through various humanitarian projects.
+            A non-profit organization committed to improving the lives of aging adults and their families through compassionate care and innovative support services.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/share/17reYq7wDe/?mibextid=wwXIfr" className="text-gray-300 hover:text-white transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://twitter.com" className="text-gray-300 hover:text-white transition-colors">
-                <Twitter size={20} />
+              <a href="https://youtu.be/YzA7puNv4bk" className="text-gray-300 hover:text-white transition-colors">
+                <Youtube size={20} />
               </a>
-              <a href="https://instagram.com" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/vcaresocialwelfare?igsh=bTJ4ZWpjYXdkcWRh" className="text-gray-300 hover:text-white transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://linkedin.com" className="text-gray-300 hover:text-white transition-colors">
+              {/* <a href="https://linkedin.com" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -61,15 +61,15 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 mt-1 flex-shrink-0" />
-                <span className="text-gray-300">123 NGO Street, Charity City, Country</span>
+                <span className="text-gray-300">Plot A 513, Block C North Nazimabad Town, Karachi, Karachi City, Sindh, Karachi, Pakistan</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 flex-shrink-0" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+92 333 1246080</span>
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="mr-2 flex-shrink-0" />
-                <span className="text-gray-300">info@helpinghands.org</span>
+                <span className="text-gray-300">shermindanish@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-700">
           <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} Helping Hands. All rights reserved.
+            © {new Date().getFullYear()} VCare Social Welfare Society. All rights reserved.
           </p>
         </div>
       </div>

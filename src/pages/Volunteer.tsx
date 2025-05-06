@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { sendVolunteerForm } from '../services/emailService';
 import { toast } from 'sonner';
-import { Users, Clock, Globe, BookOpen } from 'lucide-react';
+import { Heart, Activity, Users, FileText } from 'lucide-react';
 
 const Volunteer: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -60,35 +60,35 @@ const Volunteer: React.FC = () => {
 
   const volunteerOpportunities = [
     {
-      title: 'Field Volunteer',
-      description: 'Work directly in communities to implement projects such as water systems, school construction, or emergency relief.',
-      requirements: 'Physical fitness, willingness to travel, adaptability to different environments.',
-      icon: <Globe className="text-ngo-blue" size={24} />
+      title: 'Caregiver Support Volunteer',
+      description: 'Assist with providing companionship, emotional support, and basic care to aging adults at the VCARE Adult Day Center. Help create a warm, safe environment for seniors and support their daily activities.',
+      requirements: 'Empathy, good communication skills, patience, and a passion for elderly care.',
+      icon: <Heart className="text-ngo-blue" size={24} />
     },
     {
-      title: 'Education Volunteer',
-      description: 'Teach basic subjects, provide tutoring, or assist in developing educational materials for our education programs.',
-      requirements: 'Teaching experience or background, patience, good communication skills.',
-      icon: <BookOpen className="text-ngo-blue" size={24} />
+      title: 'Health & Wellness Volunteer',
+      description: 'Support health-related activities such as exercise classes, wellness checks, and nutritional guidance for aging adults. Help implement programs that encourage active and healthy aging.',
+      requirements: 'Basic knowledge of health and wellness practices, enthusiasm for senior care, and good organizational skills.',
+      icon: <Activity className="text-ngo-blue" size={24} />
     },
     {
-      title: 'Administrative Support',
-      description: 'Help with office tasks, data entry, communication, event planning, and general administrative support.',
-      requirements: 'Organizational skills, computer proficiency, attention to detail.',
-      icon: <Clock className="text-ngo-blue" size={24} />
-    },
-    {
-      title: 'Skilled Professional',
-      description: 'Contribute your professional skills in areas such as medicine, engineering, IT, marketing, or finance.',
-      requirements: 'Professional qualification or experience in relevant field.',
+      title: 'Community Outreach Volunteer',
+      description: 'Engage with the local community to raise awareness about VCARE\'s programs and services. Help organize events, workshops, and outreach campaigns to educate families about the importance of elder care.',
+      requirements: 'Strong communication skills, event planning experience, and a proactive attitude.',
       icon: <Users className="text-ngo-blue" size={24} />
+    },
+    {
+      title: 'Administrative Volunteer',
+      description: 'Assist with office tasks such as data entry, organizing files, and managing communications. Support the VCARE team in ensuring smooth operations of the Adult Day Center and other programs.',
+      requirements: 'Attention to detail, organizational skills, proficiency in Microsoft Office or Google Workspace, and an interest in nonprofit operations.',
+      icon: <FileText className="text-ngo-blue" size={24} />
     }
   ];
 
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-ngo-green to-ngo-green-dark text-white py-20">
+      <section className="bg-gradient-to-r from-[var(--green)] to-[var(--green-dark)] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Volunteer With Us</h1>
           <p className="text-xl max-w-2xl mx-auto">
@@ -104,7 +104,7 @@ const Volunteer: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-gray-800">Why Volunteer With Us?</h2>
               <p className="text-gray-600 mb-4">
-                Volunteering with Helping Hands is a rewarding experience that allows you to make a tangible difference in the lives of others while developing new skills and connections.
+              Volunteering with VCARE offers a fulfilling opportunity to make a real difference in the lives of aging adults and their families while gaining meaningful experiences and connections.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-start">
@@ -114,8 +114,8 @@ const Volunteer: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Make a Meaningful Impact</h3>
-                    <p className="text-gray-600">Contribute directly to projects that improve lives and communities.</p>
+                    <h3 className="font-semibold text-gray-800">Make a Compassionate Impact</h3>
+                    <p className="text-gray-600">Contribute directly to initiatives that enhance the well-being of seniors and support their families with dignity and care.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -125,8 +125,8 @@ const Volunteer: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Develop New Skills</h3>
-                    <p className="text-gray-600">Gain valuable experience and enhance your personal and professional capabilities.</p>
+                    <h3 className="font-semibold text-gray-800">Develop Valuable Skills</h3>
+                    <p className="text-gray-600">Gain hands-on experience in healthcare, caregiving, and community support while enhancing your personal and professional growth.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -136,8 +136,8 @@ const Volunteer: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Meet Like-minded People</h3>
-                    <p className="text-gray-600">Connect with others who share your passion for making a difference.</p>
+                    <h3 className="font-semibold text-gray-800">Connect with a Caring Community</h3>
+                    <p className="text-gray-600">Join a network of like-minded individuals who share your dedication to improving the lives of aging adults.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -147,15 +147,15 @@ const Volunteer: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Flexible Opportunities</h3>
-                    <p className="text-gray-600">Find volunteer roles that fit your schedule, skills, and interests.</p>
+                    <h3 className="font-semibold text-gray-800">Flexible Roles for You</h3>
+                    <p className="text-gray-600">Choose volunteer opportunities that align with your skills, schedule, and interests, making a difference at your own pace.</p>
                   </div>
                 </li>
               </ul>
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                src="volunteer.jpg"
                 alt="Volunteers working together"
                 className="rounded-lg shadow-lg w-full"
               />
@@ -260,7 +260,7 @@ const Volunteer: React.FC = () => {
                 <div className="mb-5">
                   <label className="block text-gray-700 font-medium mb-2">Areas of Interest *</label>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {['Education', 'Healthcare', 'Construction', 'Administration', 'Fundraising', 'Water & Sanitation', 'Emergency Response', 'Food Security'].map((interest) => (
+                    {['Caregiver Support', 'Health & Wellness', 'Community Outreach', 'Administrative Support', 'Fundraising', 'Event Planning', 'Senior Advocacy', 'Education & Training'].map((interest) => (
                       <label key={interest} className="flex items-center">
                         <input
                           type="checkbox"
@@ -275,6 +275,7 @@ const Volunteer: React.FC = () => {
                     ))}
                   </div>
                 </div>
+
                 
                 <div className="mb-5">
                   <label htmlFor="availability" className="block text-gray-700 font-medium mb-2">Availability *</label>
@@ -341,7 +342,7 @@ const Volunteer: React.FC = () => {
                 After submitting your application, our volunteer coordinator will review your information and contact you within 7 days to discuss potential opportunities that match your skills and interests.
               </p>
               <p className="text-gray-700">
-                If you have any questions about volunteering, please email volunteers@helpinghands.org or call us at +1 (555) 123-4567.
+                If you have any questions about volunteering, please email shermindanish@gmail.com or call us at +92 333 1246080.
               </p>
             </div>
           </div>
@@ -367,12 +368,12 @@ const Volunteer: React.FC = () => {
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h3 className="font-bold text-gray-800">Jane Smith</h3>
-                  <p className="text-sm text-gray-600">Education Volunteer</p>
+                  <h3 className="font-bold text-gray-800">Ali Ahmed</h3>
+                  <p className="text-sm text-gray-600">Caregiver Support Volunteer</p>
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "Volunteering with Helping Hands has been one of the most rewarding experiences of my life. Seeing the direct impact of our work on children's education is incredible."
+                "The opportunity to provide companionship and care to the elderly has taught me so much about empathy and patience. It's rewarding to see the positive changes we bring to their lives."
               </p>
             </div>
             
@@ -384,12 +385,12 @@ const Volunteer: React.FC = () => {
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h3 className="font-bold text-gray-800">Michael Johnson</h3>
-                  <p className="text-sm text-gray-600">Field Volunteer</p>
+                  <h3 className="font-bold text-gray-800">Omar Shah</h3>
+                  <p className="text-sm text-gray-600">Health & Wellness Volunteer</p>
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "Working on water projects in rural communities has given me a new perspective on life. The team is supportive, and the experience has been life-changing."
+                "Joining the VCARE team as a Health & Wellness volunteer was a decision I will never regret. The role gave me a unique opportunity to blend my love for fitness with my desire to help others, particularly the elderly. What I didn’t expect was how much they would inspire me. Seeing seniors motivated to exercise and improve their well-being truly reminded me of the importance of health at every stage of life. It's fulfilling in a way that goes beyond words."
               </p>
             </div>
             
@@ -401,12 +402,12 @@ const Volunteer: React.FC = () => {
                   className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <h3 className="font-bold text-gray-800">Sarah Lee</h3>
-                  <p className="text-sm text-gray-600">Healthcare Volunteer</p>
+                  <h3 className="font-bold text-gray-800">Fatima Khan</h3>
+                  <p className="text-sm text-gray-600">Community Outreach Volunteer</p>
                 </div>
               </div>
               <p className="text-gray-600 italic">
-                "Using my medical skills to help those without access to healthcare has been incredibly fulfilling. The organization is well-run and truly makes a difference."
+                "Volunteering with VCARE has been an eye-opening experience. It’s not just about spreading awareness; it’s about connecting with families and making a real impact on their understanding of elder care. I’m proud to be part of such a meaningful initiative."
               </p>
             </div>
           </div>

@@ -35,6 +35,10 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 215 79% 51%;
 
+    --light-blue: #195e95;
+    --light-blue-dark: #104f7a;
+    --green: #426d38;
+    --green-dark: #365c2b;
     --radius: 0.5rem;
   }
 
@@ -73,22 +77,23 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-ngo-blue text-white hover:bg-ngo-blue-dark px-6 py-3 rounded-md font-medium transition-colors duration-300;
+    @apply bg-[var(--light-blue)] text-white hover:bg-[var(--light-blue-dark)] px-6 py-3 rounded-md font-medium transition-colors duration-300;
   }
 
   .btn-secondary {
-    @apply bg-ngo-orange text-white hover:bg-ngo-orange-dark px-6 py-3 rounded-md font-medium transition-colors duration-300;
+    @apply bg-[var(--green)] text-white hover:bg-[var(--green-dark)] px-6 py-3 rounded-md font-medium transition-colors duration-300;
   }
 
   .btn-outline {
-    @apply border-2 border-ngo-blue text-ngo-blue hover:bg-ngo-blue hover:text-white px-6 py-3 rounded-md font-medium transition-colors duration-300;
+    @apply border-2 border-[var(--light-blue)] text-[var(--light-blue)] hover:bg-[var(--light-blue)] hover:text-white px-6 py-3 rounded-md font-medium transition-colors duration-300;
   }
 
   .input-field {
-    @apply w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-ngo-blue bg-white;
+    @apply w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--light-blue)] bg-white;
   }
 
   .card {
     @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
   }
 }
+

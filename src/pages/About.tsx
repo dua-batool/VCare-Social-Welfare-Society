@@ -34,9 +34,9 @@ const About: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-ngo-blue to-ngo-blue-dark text-white py-20">
+      <section className="bg-gradient-to-r from-[var(--light-blue)] to-[var(--light-blue-dark)] text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">About Helping Hands</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">About VCare Social Welfare Society</h1>
           <p className="text-xl max-w-2xl mx-auto">
             Learn about our mission, our team, and how we're making a difference in communities worldwide.
           </p>
@@ -50,14 +50,12 @@ const About: React.FC = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-gray-800">Our Story</h2>
               <p className="text-gray-600 mb-4">
-                Founded in 2003, Helping Hands began with a simple mission: to provide assistance to communities in need. What started as a small local initiative has grown into an international organization with projects spanning across multiple countries.
-              </p>
-              <p className="text-gray-600 mb-4">
-                Our founders, a group of dedicated humanitarian workers, saw firsthand the challenges faced by underserved communities and decided to create an organization that could address these needs effectively and sustainably.
+              In today’s world we are overwhelmed with responsibilities and cares piled one upon the other; and us at the end that comes with the package of care at the end of the day. They abound as responsibilities of me, us, our spouse, our children, our parents, our siblings, our friends, our neighbour, our co worker, and our country mate and on and on we can go.....We believe most responsibilities are enormously challenging; and of them most is the care of a frail adult loved one`s; not because we cannot do it but because we feel too powerless to offer the best care we dream of.
               </p>
               <p className="text-gray-600">
-                Today, we continue to grow our impact through the support of our donors, partners, and volunteers who share our vision of a more equitable world.
+              VCARE Adult Day Center  is  the  Project  of VCARE Society  for Healthy and Active Ageing.  VCARE is an entrepreneur in Pakistan that has based its milestones on these very emotions well understood and a team working its way up to its services and reaching it out to others.
               </p>
+          
             </div>
             <div>
               <img
@@ -82,7 +80,7 @@ const About: React.FC = () => {
                 <h2 className="text-2xl font-bold text-gray-800">Our Mission</h2>
               </div>
               <p className="text-gray-600">
-                To empower communities through sustainable development initiatives, humanitarian aid, and educational programs that create lasting positive change and improve quality of life.
+              To provide compassionate, quality care for frail adult loved ones, offering a safe and supportive environment for aging individuals while easing the emotional and physical burden on families. Through our Adult Day Center, we strive to enhance the well-being and independence of seniors, fostering a healthy and active aging process with a commitment to empathy, dignity, and respect.
               </p>
             </div>
             
@@ -94,7 +92,7 @@ const About: React.FC = () => {
                 <h2 className="text-2xl font-bold text-gray-800">Our Vision</h2>
               </div>
               <p className="text-gray-600">
-                A world where all communities have access to essential resources, education, and opportunities to thrive, regardless of geographical location or economic circumstances.
+              To be a leading provider of adult care services in Pakistan, empowering families by offering innovative solutions for the aging population. VCARE envisions a society where every elderly individual can enjoy their golden years with respect, care, and fulfillment, and where families are supported in their journey of caregiving with confidence and peace of mind.
               </p>
             </div>
           </div>
@@ -115,28 +113,28 @@ const About: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-ngo-blue">
               <h3 className="text-xl font-bold mb-3 text-gray-800">Compassion</h3>
               <p className="text-gray-600">
-                We approach our work with empathy and understanding, recognizing the dignity and worth of every individual.
+              We prioritize empathy and kindness in all our interactions, ensuring that every individual in our care feels valued, respected, and supported.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-ngo-orange">
               <h3 className="text-xl font-bold mb-3 text-gray-800">Integrity</h3>
               <p className="text-gray-600">
-                We uphold the highest ethical standards in our operations, ensuring transparency and accountability to our stakeholders.
+              We operate with honesty and transparency, building trust with families, staff, and the community through ethical practices and genuine commitment.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-ngo-green">
-              <h3 className="text-xl font-bold mb-3 text-gray-800">Sustainability</h3>
+              <h3 className="text-xl font-bold mb-3 text-gray-800">Excellence</h3>
               <p className="text-gray-600">
-                We design our programs to create lasting change, focusing on solutions that communities can maintain and build upon.
+              We are dedicated to providing the highest standards of care, continually improving our services to meet the evolving needs of those we serve.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-ngo-blue-dark">
               <h3 className="text-xl font-bold mb-3 text-gray-800">Collaboration</h3>
               <p className="text-gray-600">
-                We believe in the power of partnerships and work closely with communities, governments, and other organizations.
+              We believe in teamwork, working closely with families, healthcare professionals, and the community to deliver holistic and effective care for aging adults.
               </p>
             </div>
           </div>
@@ -173,17 +171,17 @@ const About: React.FC = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-ngo-blue text-white">
+      <section className="py-16 bg-[var(--green)] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Mission</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Be part of our story. Together, we can create meaningful change in communities around the world.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/volunteer" className="bg-white text-ngo-blue hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors duration-300">
+            <Link to="/volunteer" className="bg-white text-[var(--green)] hover:bg-gray-100 px-8 py-3 rounded-md font-medium transition-colors duration-300">
               Join as Volunteer
             </Link>
-            <Link to="/donate" className="border-2 border-white hover:bg-white hover:text-ngo-blue px-8 py-3 rounded-md font-medium transition-colors duration-300">
+            <Link to="/donate" className="border-2 border-white hover:bg-white hover:text-[var(--green)] px-8 py-3 rounded-md font-medium transition-colors duration-300">
               Support Our Cause
             </Link>
           </div>

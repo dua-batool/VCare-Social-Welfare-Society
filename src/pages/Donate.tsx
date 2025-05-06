@@ -48,7 +48,7 @@ const Donate: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-ngo-orange to-ngo-orange-dark text-white py-20">
+      <section className="bg-gradient-to-r from-[var(--green)] to-[var(--green-dark)] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Donate Today</h1>
           <p className="text-xl max-w-2xl mx-auto">
