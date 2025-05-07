@@ -337,9 +337,9 @@ const Volunteer: React.FC = () => {
             </div>
             
             <div className="mt-8 p-6 bg-ngo-blue-light rounded-lg">
-              <h3 className="text-lg font-semibold mb-2 text-ngo-blue">What Happens Next?</h3>
+              <h3 className="text-lg font-semibold mb-2 text-[var(--light-blue)]">What Happens Next?</h3>
               <p className="text-gray-700 mb-2">
-                After submitting your application, our volunteer coordinator will review your information and contact you within 7 days to discuss potential opportunities that match your skills and interests.
+                After submitting your application, we will review your information and contact you within 7 days to discuss potential opportunities that match your skills and interests.
               </p>
               <p className="text-gray-700">
                 If you have any questions about volunteering, please email shermindanish@gmail.com or call us at +92 333 1246080.
@@ -362,11 +362,11 @@ const Volunteer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img
+                {/* <img
                   src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                   alt="Volunteer Jane"
                   className="w-12 h-12 rounded-full object-cover mr-4"
-                />
+                /> */}
                 <div>
                   <h3 className="font-bold text-gray-800">Ali Ahmed</h3>
                   <p className="text-sm text-gray-600">Caregiver Support Volunteer</p>
@@ -379,11 +379,11 @@ const Volunteer: React.FC = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img
+                {/* <img
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
                   alt="Volunteer Michael"
                   className="w-12 h-12 rounded-full object-cover mr-4"
-                />
+                /> */}
                 <div>
                   <h3 className="font-bold text-gray-800">Omar Shah</h3>
                   <p className="text-sm text-gray-600">Health & Wellness Volunteer</p>
@@ -396,11 +396,11 @@ const Volunteer: React.FC = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
-                <img
+                {/* <img
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
                   alt="Volunteer Sarah"
                   className="w-12 h-12 rounded-full object-cover mr-4"
-                />
+                /> */}
                 <div>
                   <h3 className="font-bold text-gray-800">Fatima Khan</h3>
                   <p className="text-sm text-gray-600">Community Outreach Volunteer</p>
