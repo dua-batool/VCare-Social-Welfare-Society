@@ -1,29 +1,47 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Users, BarChart, ThumbsUp } from 'lucide-react';
 
 const Home: React.FC = () => {
   const featuredProjects = [
     {
       title: "Annual Conference on Elder Abuse",
       description: "Every October, VCare Social Welfare Society organizes a dedicated conference focused on raising awareness about elder abuse — a topic often neglected in public discourse. Through this initiative, VCare creates a space for healthcare professionals, caregivers, students, and community members to come together, discuss challenges, share experiences, and advocate for the protection and dignity of older adults. The conference highlights legal, emotional, and social aspects of elder abuse and promotes preventive strategies that empower families and institutions to better support the elderly population.",
-      image: "/conference.jpg",
+      image: "/conference1.jpg",
       link: "/projects"
     },
     {
       title: "Community Outreach for Healthy and Active Ageing",
       description: "VCare regularly conducts outreach programs in underserved communities, particularly targeting low-income and marginalized areas. In these sessions, VCare team members and volunteers visit local neighborhoods to educate senior citizens about the importance of healthy lifestyles, mental well-being, and preventive healthcare. The initiative focuses on spreading awareness about aging-related issues, encouraging mobility, self-care, and informed decision-making for older adults. By bringing these resources directly to those who might not otherwise have access, VCare works to reduce the disparities in elder care across socio-economic lines.",
-      image: "/ageing.jpg",
+      image: "/active-aging.jpg",
       link: "/projects"
     },
     {
       title: "Celebrating Older Adults: VCare Annual Seniors’ Day",
       description: "VCare Social Welfare Society organizes its own annual event dedicated entirely to celebrating the lives, experiences, and continued vitality of senior citizens. This special day is designed to uplift and engage the elderly through fun, interactive activities like games, sports, music, and storytelling sessions. It serves as a reminder that aging can be joyful and fulfilling when approached with community, respect, and care. By hosting this celebration, VCare not only brings smiles to the faces of older adults but also raises awareness about the importance of social inclusion, emotional well-being, and active engagement in later life.",
-      image: "elder-playing.jpg",
+      image: "/ludo.jpg",
       link: "/projects"
     }
   ];
+
+  const images = [
+    "/main-image.jpg",
+    "/session.jpg",
+    "/people.jpg",
+    "/balls.jpg",
+    "/eat.jpg"
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); // 2 seconds
+
+    return () => clearInterval(interval); // cleanup
+  }, []);
 
   return (
     <div>
@@ -33,28 +51,25 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div className="animate-fade-in-up">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Caring for a Better <br /> Tomorrow
+                Caring for a Better <br /> Tomorrow
               </h1>
               <p className="text-lg md:text-xl mb-8 text-gray-100">
-              Join us in our mission to enhance the lives of aging adults through compassionate care, community support, and empowering families for a healthier, active aging experience.
+                Join us in our mission to enhance the lives of aging adults through compassionate care, community support, and empowering families for a healthier, active aging experience.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/donate" 
-                className="text-light-blue border-2 border-white px-6 py-3 rounded-md font-medium transition-colors duration-300 hover:bg-light-blue hover:text-white">
-                Donate Now
-              </Link>
-
-
+                <Link to="/donate" className="text-light-blue border-2 border-white px-6 py-3 rounded-md font-medium transition-colors duration-300 hover:bg-light-blue hover:text-white">
+                  Donate Now
+                </Link>
                 <Link to="/volunteer" className="bg-white text-[var(--light-blue-dark)] hover:bg-gray-100 px-6 py-3 rounded-md font-medium transition-colors duration-300">
                   Volunteer
                 </Link>
               </div>
             </div>
             <div className="hidden md:block animate-fade-in">
-              <img 
-                src="/main-image.jpg" 
+            <img 
+                src={images[currentImageIndex]} 
                 alt="Helping the elderly" 
-                className="rounded-lg shadow-xl max-w-md mx-auto"
+                className="rounded-lg shadow-xl mx-auto transition-all duration-1000 object-cover h-[320px] w-full max-w-md"
               />
             </div>
           </div>
