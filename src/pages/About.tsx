@@ -6,30 +6,29 @@ import { Target, Heart, Globe, Zap } from 'lucide-react';
 const About: React.FC = () => {
   const teamMembers = [
     {
-      name: 'Jane Doe',
-      position: 'Executive Director',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80',
-      bio: 'With over 15 years of experience in the non-profit sector, Jane leads our organization with passion and vision.'
+      name: 'Shermin Danish',
+      position: 'Cofounder',
     },
     {
-      name: 'John Smith',
-      position: 'Operations Director',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
-      bio: 'John oversees all of our field operations, ensuring that our projects deliver maximum impact to communities in need.'
+      name: 'Fatima Khalfan',
+      position: 'Manager CEO',
     },
     {
-      name: 'Sarah Johnson',
-      position: 'Program Coordinator',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80',
-      bio: 'Sarah develops and manages our educational and healthcare programs, focusing on sustainability and community involvement.'
+      name: 'Isha Moiz',
+      position: 'Manager',
     },
     {
-      name: 'Michael Chen',
-      position: 'Fundraising Director',
-      image: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1148&q=80',
-      bio: 'Michael leads our fundraising efforts, developing innovative strategies to support our growing impact.'
-    }
+      name: 'Shahzad Khan',
+      position: 'Manager',
+    },
   ];
+
+  const founder = {
+      name: 'Sameena Vertejee',
+      position: 'Founder',
+      description: 'Sameena Vertejee is a seasoned public health nurse practitioner with a deep commitment to community well-being, especially in the areas of healthy aging and substance use disorders. With over three decades of experience at Aga Khan University in both Pakistan and Uganda, she has combined teaching, research, and service to address complex health challenges through a public health lens. Sameena is a founding board member of VCare Social Welfare Society, where she brings her passion for active, dignified aging to the forefront. Her work with VCare reflects her long-standing dedication to empowering senior citizens through social connection, health education, and community engagement. She is also a member of the Sindh Senior Citizen Welfare Council, advocating for policies that improve the quality of life for the elderly.',
+      image: '/sameena.jpg',
+    };
 
   return (
     <div>
@@ -48,7 +47,7 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-800">Our Story</h2>
+              <h2 className="text-3xl font-bold mb-6 text-gray-800">About Us</h2>
               <p className="text-gray-600 mb-4">
               In today’s world we are overwhelmed with responsibilities and cares piled one upon the other; and us at the end that comes with the package of care at the end of the day. They abound as responsibilities of me, us, our spouse, our children, our parents, our siblings, our friends, our neighbour, our co worker, and our country mate and on and on we can go.....We believe most responsibilities are enormously challenging; and of them most is the care of a frail adult loved one`s; not because we cannot do it but because we feel too powerless to offer the best care we dream of.
               </p>
@@ -59,8 +58,7 @@ const About: React.FC = () => {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                alt="Helping Hands volunteers"
+                src="/about.jpg"
                 className="rounded-lg shadow-lg w-full"
               />
             </div>
@@ -144,31 +142,50 @@ const About: React.FC = () => {
       {/* Team Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
+          {/* Section Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Leadership Team</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Meet the dedicated professionals who lead our organization.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          {/* Founder Block */}
+          <div className="bg-white rounded-xl shadow-md p-6 mb-12 flex flex-col-reverse lg:flex-row items-center gap-8">
+            {/* Founder Text */}
+            <div className="w-full lg:w-2/3">
+              <h3 className="text-2xl font-bold text-[var(--light-blue)] mb-1">{founder.name}</h3>
+              <p className="text-md font-medium text-gray-600 mb-4">{founder.position}</p>
+              <p className="text-gray-700 leading-relaxed">{founder.description}</p>
+            </div>
+            {/* Founder Image */}
+            <div className="w-full lg:w-1/3 flex justify-center">
+              <img
+                src={founder.image}
+                alt={founder.name}
+                className="w-60 h-60 object-cover rounded-full shadow-lg"
+              />
+            </div>
+          </div>
+
+          {/* Team Member Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-1 text-gray-800">{member.name}</h3>
-                  <p className="text-ngo-blue font-medium mb-3">{member.position}</p>
-                  <p className="text-gray-600">{member.bio}</p>
+              <div
+                key={index}
+                className="bg-gradient-to-br from-white to-white border border-blue-100 rounded-xl p-6 text-center shadow hover:shadow-md transition"
+              >
+                <div className="mb-2 text-[var(--light-blue)] font-semibold tracking-wide text-sm uppercase">
+                  {member.position}
                 </div>
+                <h3 className="text-xl font-bold text-gray-800">{member.name}</h3>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+
 
       {/* Call to Action */}
       <section className="py-16 bg-[var(--green)] text-white">

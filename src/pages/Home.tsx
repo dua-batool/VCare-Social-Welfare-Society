@@ -37,12 +37,16 @@ const Home: React.FC = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000); // 2 seconds
-
-    return () => clearInterval(interval); // cleanup
+      setIsFading(true); // Start fade out
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setIsFading(false); // Fade in new image
+      }, 500); // Half the duration of fade transition
+    }, 3000); // Every 3 seconds
+  
+    return () => clearInterval(interval);
   }, []);
-
+  
   return (
     <div>
       {/* Hero Section */}
@@ -69,8 +73,9 @@ const Home: React.FC = () => {
             <img 
                 src={images[currentImageIndex]} 
                 alt="Helping the elderly" 
-                className="rounded-lg shadow-xl mx-auto transition-all duration-1000 object-cover h-[320px] w-full max-w-md"
+                className={`rounded-lg shadow-xl mx-auto transition-opacity duration-500 object-cover h-[320px] w-full max-w-md ${isFading ? 'opacity-0' : 'opacity-100'}`}
               />
+
             </div>
           </div>
         </div>

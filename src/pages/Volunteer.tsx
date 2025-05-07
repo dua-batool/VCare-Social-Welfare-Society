@@ -92,7 +92,7 @@ const Volunteer: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Volunteer With Us</h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Join our team of dedicated volunteers making a positive impact in communities around the world.
+          Join our team of compassionate volunteers bringing dignity and care to elderly communities.
           </p>
         </div>
       </section>
@@ -114,7 +114,7 @@ const Volunteer: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Make a Compassionate Impact</h3>
+                    <h4 className="font-semibold text-gray-800">Make a Compassionate Impact</h4>
                     <p className="text-gray-600">Contribute directly to initiatives that enhance the well-being of seniors and support their families with dignity and care.</p>
                   </div>
                 </li>
@@ -125,7 +125,7 @@ const Volunteer: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Develop Valuable Skills</h3>
+                    <h4 className="font-semibold text-gray-800">Develop Valuable Skills</h4>
                     <p className="text-gray-600">Gain hands-on experience in healthcare, caregiving, and community support while enhancing your personal and professional growth.</p>
                   </div>
                 </li>
@@ -136,7 +136,7 @@ const Volunteer: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Connect with a Caring Community</h3>
+                    <h4 className="font-semibold text-gray-800">Connect with a Caring Community</h4>
                     <p className="text-gray-600">Join a network of like-minded individuals who share your dedication to improving the lives of aging adults.</p>
                   </div>
                 </li>
@@ -147,7 +147,7 @@ const Volunteer: React.FC = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-800">Flexible Roles for You</h3>
+                    <h4 className="font-semibold text-gray-800">Flexible Roles for You</h4>
                     <p className="text-gray-600">Choose volunteer opportunities that align with your skills, schedule, and interests, making a difference at your own pace.</p>
                   </div>
                 </li>
@@ -185,7 +185,7 @@ const Volunteer: React.FC = () => {
                 </div>
                 <p className="text-gray-600 mb-4">{opportunity.description}</p>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-1">Requirements:</h4>
+                  <h5 className="font-semibold text-[var(--light-blue)] mb-1">Requirements:</h5>
                   <p className="text-gray-600 text-sm">{opportunity.requirements}</p>
                 </div>
               </div>

@@ -52,7 +52,7 @@ const Donate: React.FC = () => {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Donate Today</h1>
           <p className="text-xl max-w-2xl mx-auto">
-            Your generosity can make a real difference in the lives of those we serve. Every donation helps us continue our mission.
+          Your generosity can make a lasting difference in the lives of older adults. Every donation helps us continue our mission of healthy and active aging.
           </p>
         </div>
       </section>
