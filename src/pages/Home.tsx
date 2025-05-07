@@ -8,19 +8,19 @@ const Home: React.FC = () => {
     {
       title: "Annual Conference on Elder Abuse",
       description: "Every October, VCare Social Welfare Society organizes a dedicated conference focused on raising awareness about elder abuse — a topic often neglected in public discourse. Through this initiative, VCare creates a space for healthcare professionals, caregivers, students, and community members to come together, discuss challenges, share experiences, and advocate for the protection and dignity of older adults. The conference highlights legal, emotional, and social aspects of elder abuse and promotes preventive strategies that empower families and institutions to better support the elderly population.",
-      image: "https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      image: "/conference.jpg",
       link: "/projects"
     },
     {
       title: "Community Outreach for Healthy and Active Ageing",
       description: "VCare regularly conducts outreach programs in underserved communities, particularly targeting low-income and marginalized areas. In these sessions, VCare team members and volunteers visit local neighborhoods to educate senior citizens about the importance of healthy lifestyles, mental well-being, and preventive healthcare. The initiative focuses on spreading awareness about aging-related issues, encouraging mobility, self-care, and informed decision-making for older adults. By bringing these resources directly to those who might not otherwise have access, VCare works to reduce the disparities in elder care across socio-economic lines.",
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1122&q=80",
+      image: "/ageing.jpg",
       link: "/projects"
     },
     {
       title: "Celebrating Older Adults: VCare Annual Seniors’ Day",
       description: "VCare Social Welfare Society organizes its own annual event dedicated entirely to celebrating the lives, experiences, and continued vitality of senior citizens. This special day is designed to uplift and engage the elderly through fun, interactive activities like games, sports, music, and storytelling sessions. It serves as a reminder that aging can be joyful and fulfilling when approached with community, respect, and care. By hosting this celebration, VCare not only brings smiles to the faces of older adults but also raises awareness about the importance of social inclusion, emotional well-being, and active engagement in later life.",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      image: "elder-playing.jpg",
       link: "/projects"
     }
   ];
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-80 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-gray-800">{project.title}</h3>
