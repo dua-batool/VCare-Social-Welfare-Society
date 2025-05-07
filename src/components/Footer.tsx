@@ -47,11 +47,11 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Our Projects</h3>
             <ul className="space-y-2">
-              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Clean Water Initiative</Link></li>
-              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Education For All</Link></li>
-              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Healthcare Services</Link></li>
-              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Emergency Response</Link></li>
-              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Food Security Program</Link></li>
+              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Annual Conference on Elder Abuse</Link></li>
+              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Community Outreach for Healthy and Active Ageing</Link></li>
+              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Celebrating Older Adults: VCare Annual Seniors’ Day</Link></li>
+              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Health & Wellness Screening Camps</Link></li>
+              <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors">Skills Revival Workshops</Link></li>
             </ul>
           </div>
 
