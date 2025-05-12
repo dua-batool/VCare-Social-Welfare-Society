@@ -342,7 +342,7 @@ const Volunteer: React.FC = () => {
                 After submitting your application, we will review your information and contact you within 7 days to discuss potential opportunities that match your skills and interests.
               </p>
               <p className="text-gray-700">
-                If you have any questions about volunteering, please email shermindanish@gmail.com or call us at +92 333 1246080.
+                If you have any questions about volunteering, please email vcaresocialwelfare786@gmail.com or call us at +92 333 1246080.
               </p>
             </div>
           </div>

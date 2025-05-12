@@ -124,21 +124,22 @@ const Donate: React.FC = () => {
 
       <div className="space-y-3">
         <div className="flex justify-between">
-          <span className="text-gray-600 font-medium">Account Title:</span>
-          <span className="text-gray-800">VCare Social Welfare Society</span>
+          <span className="text-gray-600 font-medium">Bank Name:</span>
+          <span className="text-gray-800">Islamic Bank</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-600 font-medium">Bank Name:</span>
-          <span className="text-gray-800">ABC Bank Ltd.</span>
+          <span className="text-gray-600 font-medium">BSB:</span>
+          <span className="text-gray-800">112 879</span>
         </div>
         <div className="flex justify-between">
           <span className="text-gray-600 font-medium">Account Number:</span>
-          <span className="text-gray-800">12345678901234</span>
+          <span className="text-gray-800">425 989 660</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-gray-600 font-medium">IBAN:</span>
-          <span className="text-gray-800">PK00ABCD1234567890123456</span>
+          <span className="text-gray-600 font-medium">Reference:</span>
+          <span className="text-gray-800">ZAKAT AL-MAAL/FITR</span>
         </div>
+
         {/* <div className="flex justify-between">
           <span className="text-gray-600 font-medium">SWIFT/BIC:</span>
           <span className="text-gray-800">ABCDPKKA</span>
